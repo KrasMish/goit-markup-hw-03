@@ -148,26 +148,44 @@ img {
 .main .banner .main-button:focus {
   background-color: #404bbf;
 }
+.visually-hidden {
+  position: absolute;
 
-.section-first ul {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section-first {
+  padding: 120px 0;
+}
+.section-first .menu {
   margin: 120px 0px;
   list-style: none;
   justify-content: center;
+  display: flex;
+  gap: 24px;
 }
-.section-first ul li {
+.section-first .menu .item {
   margin-right: 24px;
+  width: calc((100% - 72px) / 4);
 }
-.section-first ul li:last-child {
+.section-first .menu .item:last-child {
   margin-right: 0px;
 }
-.section-first ul li .sec-header {
+.section-first .menu .item .sec-header {
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
-.section-first ul li .sec-par {
+.section-first .menu li .sec-par {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
