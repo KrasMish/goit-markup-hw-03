@@ -1,51 +1,45 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap");
 * {
   margin: 0px;
-  padding: 0px;
 }
 body {
-  font-family: "Roboto";
-  width: 1440px;
-  height: 600px;
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #ffffff;
 }
-.header {
-  display: flex;
-  align-content: space-between;
-}
+
 .header nav {
   background-color: #ffffff;
-  padding: 24px 156px;
   color: #2e2f42;
   font-size: 16px;
-  display: inline-block;
-  align-items: start;
 }
 .logo {
-  color: black;
-  font-family: "Raleway";
+  color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   text-decoration: none;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   margin-right: 76px;
   text-transform: uppercase;
 }
 
 .logo span {
-  color: #4d5ae5;
+  color: #2e2f42;
 }
-.header nav ul {
-  display: inline;
+.header nav ul .item {
+  color: #2e2f42;
+}
+.header nav ul .item:focus {
+  color: #404bbf;
 }
 .header nav ul li {
-  display: inline;
   list-style-type: none;
   letter-spacing: 0.02em;
   margin-right: 40px;
 }
+
 .header nav ul li:last-child {
   margin-right: 0px;
 }
@@ -62,16 +56,10 @@ body {
   color: #404bbf;
 }
 .header .address {
-  /* float: right; */
-  align-items: end;
-
   margin: 24px 156px;
-}
-.header .address ul {
-  display: inline;
+  font-style: normal;
 }
 .header .address ul li {
-  display: inline;
   margin-left: 40px;
 }
 .header .address ul li:last-child {
@@ -83,46 +71,46 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   letter-spacing: 0.32px;
 }
 .header .address a:hover {
   color: #404bbf;
 }
+.header .address a:focus {
+  color: #404bbf;
+}
 
 .main .banner {
-  width: 1440px;
-  height: 600px;
   background-color: #2e2f42;
   color: white;
-  align-items: center;
   justify-content: center;
-  display: flex;
-  flex-direction: column;
 }
-.main .banner h1 {
+.main .banner .banner-header {
   font-weight: bold;
   font-size: 56px;
   letter-spacing: 0.02em;
   line-height: 60px;
+  line-height: 1.07;
+  text-align: center;
 }
-.main .banner button {
-  padding: 16px 32px;
-  gap: 10px;
-  border-radius: 4px;
+.main .banner .main-button {
+  cursor: pointer;
   background: var(--IRIS, #4d5ae5);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: white;
   margin-top: 48px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.64px;
-  border: none;
-  display: inline-flex;
-  align-items: flex-start;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
 }
-.main .banner button:hover {
+.main .banner .main-button:hover {
+  background-color: #404bbf;
+}
+.main .banner .main-button:focus {
   background-color: #404bbf;
 }
 
@@ -130,78 +118,69 @@ body {
   margin: 120px 0px;
   list-style: none;
   justify-content: center;
-  display: flex;
 }
 .section-first ul li {
   margin-right: 24px;
-  width: 264px;
-  gap: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 .section-first ul li:last-child {
   margin-right: 0px;
 }
-.section-first ul li h3 {
+.section-first ul li .sec-header {
   color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
-.section-first ul li p {
+.section-first ul li .sec-par {
+  font-size: 16px;
+  line-height: 1.5;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
   color: #434455;
-  width: 264px;
 }
 
 .section-second {
   background-color: #f4f4fd;
   justify-content: center;
-  align-items: center;
-  width: 1440px;
-  height: 732px;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
 }
 .section-second ul {
   list-style: none;
-  display: inline-block;
 }
-.section-second h2 {
+.section-second .sec-header {
   color: var(--NAVY-BLUE, #2e2f42);
-  text-align: center;
-
+  line-height: 1.11;
   font-family: Roboto;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 40px; /* 111.111% */
   letter-spacing: 0.72px;
   text-transform: capitalize;
   margin-bottom: 72px;
+  text-align: center;
 }
-.section-second ul li {
-  padding-bottom: 32px;
+.section-second ul .item {
   justify-content: center;
-  align-items: center;
-  gap: 32px;
-  border-radius: 0px 0px 4px 4px;
   background: var(--WHITE, #fff);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   margin-right: 24px;
-  display: inline-flex;
-  flex-direction: column;
 }
-.section-second ul li:last-child {
+.section-second ul .item:last-child {
   margin-right: 0px;
 }
-.section-third {
-  padding: 0px 156px;
+.section-second ul .item .item-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
-.section-third h2 {
+.section-second ul .item .item-p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.section-third .header {
   margin-top: 120px;
   color: var(--NAVY-BLUE, #2e2f42);
   text-align: center;
@@ -210,119 +189,74 @@ body {
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 40px; /* 111.111% */
+  line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
   margin-bottom: 72px;
 }
 .section-third ul {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
 }
 .section-third ul li {
-  width: 360px;
-  height: 420px;
-  padding-bottom: 32px;
   background: var(--WHITE, #fff);
   margin-right: 24px;
   margin-bottom: 48px;
 }
-.section-third ul li img {
-  width: 360px;
-  height: 300px;
-}
 .section-third ul li:nth-child(3n + 3) {
   margin-right: 0px;
 }
-.section-third ul li h3 {
+.section-third ul li .header {
   color: var(--NAVY-BLUE, #2e2f42);
 
   font-family: Roboto;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 120% */
+  line-height: 24px;
   letter-spacing: 0.4px;
   margin-left: 20px;
   margin-bottom: 8px;
 }
-.section-third ul li p {
+.section-third ul li .par {
   color: var(--SLATE, #434455);
 
-  /* Body */
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   letter-spacing: 0.32px;
   margin-left: 20px;
 }
-.section-third ul li .container {
-  width: 360px;
-  gap: 32px;
-  border: 1px solid var(--CORNFLOWER, #e7e9fc);
-  background: var(--WHITE, #fff);
-  border-top: none;
-  box-sizing: border-box;
-  margin-top: -4px;
-  padding: 32px 0px;
-}
-.footer {
-  width: 1440px;
-  height: 312px;
-  background: var(--NAVY-BLUE, #2e2f42);
-  box-sizing: border-box;
-  justify-content: center;
-  padding-left: 156px;
-  flex-shrink: 0;
-  flex-direction: column;
-  display: flex;
-}
-.footer p {
-  color: var(--CLOUD, #f4f4fd);
 
-  /* Body */
+.footer {
+  background: var(--NAVY-BLUE, #2e2f42);
+  justify-content: center;
+}
+.footer .paragraph {
+  color: var(--CLOUD, #f4f4fd);
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   letter-spacing: 0.32px;
-  height: 72px;
-  width: 264px;
 }
-.hover-card:hover img {
-  display: none;
-}
+
 .hover-card .placeholder {
-    display: none;
   background-color: #4d5ae5;
-  width: 360px;
-  height: 300px;
   color: white;
-  padding: 40px 32px;
   letter-spacing: 0.32px;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
-  box-sizing: border-box;
-  flex-shrink: 0;
+  line-height: 24px;
 }
-.hover-card:hover .placeholder{
-    display: block;
-}
-.hover-card:hover .container {
-  border: 1px solid var(--CLOUD, #f4f4fd);
-  background: var(--WHITE, #fff);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
+
 .footer .logo {
   margin-bottom: 17.5px;
-  color: white;
+  color: #4d5ae5;
+}
+.footer .logo .logo-text {
+  color: #f4f4fd;
 }
