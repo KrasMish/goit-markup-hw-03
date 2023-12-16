@@ -273,10 +273,10 @@ img {
   row-gap: 48px;
 }
 .section-third .list .item {
-  padding: 0;
+  /* padding: 0; */
   background: var(--WHITE, #fff);
   /* margin-right: 24px; */
-  margin-bottom: 48px;
+  /* margin-bottom: 48px; */
   width: calc((100% - 48px) / 3);
   border: 1px solid #e7e9fc;
   border-top: none;
