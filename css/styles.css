@@ -236,11 +236,8 @@ img {
   color: #2e2f42;
   text-align: center;
   margin-bottom: 8px;
-  /* margin-top: 32px; */
 }
-/* .section-second .list .item .card {
-  padding-bottom: 32px;
-} */
+
 .section-second .list .item .item-p {
   font-size: 16px;
   line-height: 1.5;
@@ -266,6 +263,7 @@ img {
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  border: none;
 }
 .section-third .list {
   list-style: none;
@@ -284,15 +282,15 @@ img {
 .section-third .list .item:nth-child(3n + 3) {
   margin-right: 0px;
 }
-.section-third .list .item .card {
+.section-third .list .item {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
   box-sizing: border-box;
 }
-.section-third .list .item .card .header {
+.section-third .list .item .header {
   color: var(--NAVY-BLUE, #2e2f42);
-
+  border: none;
   font-family: Roboto;
   font-size: 20px;
   font-style: normal;
@@ -304,7 +302,7 @@ img {
   margin-top: 32px;
   text-align: start;
 }
-.section-third .list .item .card .par {
+.section-third .list .item .par {
   color: var(--SLATE, #434455);
   font-family: Roboto;
   font-size: 16px;
