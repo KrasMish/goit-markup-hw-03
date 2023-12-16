@@ -59,7 +59,7 @@ img {
 .header .header-nav .menu li {
   list-style-type: none;
   letter-spacing: 0.02em;
-  /* margin-right: 40px; */
+  margin-right: 40px;
 }
 
 .header .header-nav .menu li:last-child {
@@ -88,12 +88,7 @@ img {
   list-style: none;
   padding: 0;
 }
-.header .address .menu li {
-  margin-left: 40px;
-}
-.header .address .menu li:last-child {
-  margin-left: 0px;
-}
+
 .header .address a {
   color: #434455;
   text-decoration: none;
