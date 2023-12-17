@@ -185,9 +185,9 @@ img {
   padding-left: 0;
 }
 .section-first .menu .item-sec-t {
-  /*margin-right: 24px;*/
-  width: calc((100% - 72px) / 4);
-    padding-left: 0;
+    margin-right: 24px;
+      padding: 0;
+      flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .section-first .menu .item-sec-t .sec-header {
