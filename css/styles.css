@@ -172,6 +172,9 @@ img {
 }
 .section-first .menu .item {
   margin-right: 24px;
+  /* width: calc((100% - 72px) / 4); */
+}
+.section-first .menu .item-first{
   width: calc((100% - 72px) / 4);
 }
 /* .section-first .menu .item:last-child {
