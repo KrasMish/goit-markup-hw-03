@@ -170,17 +170,12 @@ img {
   display: flex;
   gap: 24px;
 }
-.section-first .menu .item {
+.section-first .menu .item-sec2 {
   margin-right: 24px;
-  /* width: calc((100% - 72px) / 4); */
-}
-.section-first .menu .item-first{
   width: calc((100% - 72px) / 4);
 }
-/* .section-first .menu .item:last-child {
-  margin-right: 0px;
-} */
-.section-first .menu .item .sec-header {
+
+.section-first .menu .item-sec2 .sec-header {
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
@@ -188,7 +183,7 @@ img {
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
-.section-first .menu .item .sec-par {
+.section-first .menu .item-sec2 .sec-par {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
