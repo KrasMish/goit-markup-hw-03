@@ -288,6 +288,7 @@ img {
 }
 .section-third .list .item {
   width: calc((100% - 48px) / 3);
+  padding: 0;
   background: var(--WHITE, #fff);
 }
 .section-third .list .item img {
